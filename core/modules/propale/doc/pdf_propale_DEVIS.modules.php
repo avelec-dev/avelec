@@ -590,7 +590,7 @@ class pdf_propale_DEVIS extends ModelePDFPropales
 			$pdf->SetXY($deltax, $cury+20);
 			$pdf->SetFont('','B', $default_font_size - 2);
 			$txt = "Cachet et signature de votre société";
-			$txt = utf8_encode($txt);
+			//$txt = utf8_encode($txt);
 			$pdf->MultiCell(85, 3, $txt, 0, 'L', 0);
 				
 		return $posy;
