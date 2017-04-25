@@ -896,7 +896,7 @@ class pdf_avelec extends ModelePDFCommandes
 		$pdf->SetXY($posx,$posy);
 		$pdf->SetTextColor(0,0,60);
 		$txt = "Date";
-		$txt = utf8_encode($txt);
+		//$txt = utf8_encode($txt);
 		$pdf->MultiCell(100, 4, $txt." : " . dol_print_date($object->date,"%d %b %Y",false,$outputlangs,true), '', 'R');
 
 		if ($showaddress)

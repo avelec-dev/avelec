@@ -825,8 +825,8 @@ class pdf_propale_DEVIS extends ModelePDFPropales
 		$pdf->SetTextColor(0,0,0);
 		$pdf->SetFont('','',$default_font_size - 2);
 		//$titre = $outputlangs->transnoentities("AmountInCurrency",$outputlangs->transnoentitiesnoconv("Currency".$conf->monnaie));
-		$txt = "Montants exprim�s en Euros";
-		$txt = utf8_encode($txt);
+		$txt = "Montants exprimés en Euros";
+		//$txt = utf8_encode($txt);
 		$pdf->SetXY($this->page_largeur - $this->marge_droite - ($pdf->GetStringWidth($txt) + 3), $tab_top-4);
 		$pdf->MultiCell(($pdf->GetStringWidth($txt) + 3), 2, $txt);
 		

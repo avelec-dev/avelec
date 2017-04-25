@@ -466,7 +466,7 @@ class pdf_avelec extends ModelePDFDeliveryOrder
 		$pdf->Rect(2*$larg_sign+$this->marge_gauche, ($tab_top + $tab_height + 3), $larg_sign, 25 );
 		$pdf->SetXY(2*$larg_sign+$this->marge_gauche + 2, $tab_top + $tab_height + 5);
 		$txt = "Pour votre entreprise:";
-		$txt = utf8_encode($txt);
+		//$txt = utf8_encode($txt);
 		$pdf->MultiCell($larg_sign,3, $txt,'','L');
 		
 
@@ -517,7 +517,7 @@ class pdf_avelec extends ModelePDFDeliveryOrder
 		$pdf->SetXY($posx,$posy);
 		$pdf->SetTextColor(0,0,60);
 		$txt = "Bon de livraison ";
-		$txt = utf8_encode($txt);
+		//$txt = utf8_encode($txt);
 		$pdf->MultiCell(100, 4, $txt." ".$outputlangs->convToOutputCharset($object->ref), '', 'R');
 
 		$pdf->SetFont('','',$default_font_size + 2);

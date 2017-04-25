@@ -508,7 +508,7 @@ class pdf_propale_BE extends ModelePDFPropales
 		$pdf->SetXY($posx,$posy);
 		$pdf->SetTextColor(0,0,60);
 		$txt = "Bon de Prise en Charge";
-		$txt = utf8_encode($txt);
+		//$txt = utf8_encode($txt);
 		$pdf->MultiCell(100, 4, $txt.": " . $outputlangs->convToOutputCharset($object->ref), '' , 'R');
 
 		$posy+=1;
